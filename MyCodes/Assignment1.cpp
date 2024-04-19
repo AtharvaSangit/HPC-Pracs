@@ -4,50 +4,6 @@
 
 using namespace std;
 
-// struct node {
-//     node *left, *right;
-//     int data;
-// };
-
-// node *insert(node *root, int data) {
-//     if (!root) {
-//         root = new node;
-//         root->left = nullptr;
-//         root->right = nullptr;
-//         root->data = data;
-//         return root;
-//     }
-
-//     queue<node *> q;
-//     q.push(root);
-
-//     while (!q.empty()) {
-//         node *temp = q.front();
-//         q.pop();
-
-//         if (!temp->left) {
-//             temp->left = new node;
-//             temp->left->left = nullptr;
-//             temp->left->right = nullptr;
-//             temp->left->data = data;
-//             return root;
-//         } else {
-//             q.push(temp->left);
-//         }
-
-//         if (!temp->right) {
-//             temp->right = new node;
-//             temp->right->left = nullptr;
-//             temp->right->right = nullptr;
-//             temp->right->data = data;
-//             return root;
-//         } else {
-//             q.push(temp->right);
-//         }
-//     }
-
-//     return root;
-// }
 struct node
 {
     int data;
@@ -119,20 +75,7 @@ void bfs(node *head)
 
 int main()
 {
-    // node *root = nullptr;
-    // int data;
-    // char ans;
 
-    // do
-    // {
-    //     cout << "\n enter data=>";
-    //     cin >> data;
-
-    //     root = insert(root, data);
-
-    //     cout << "do you want insert one more node?";
-    //     cin >> ans;
-    // } while (ans == 'y' || ans == 'Y');
     node *root = nullptr; // Initialize an empty binary tree
 
     // Insert nodes into the binary tree
